@@ -1,0 +1,27 @@
+!<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <script>
+        function isPalindrome(str) {
+            const reverseString = str.split('').reverse().join('');
+            if (reverseString.toUpperCase() === str.toUpperCase()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log(isPalindrome('kayak')) // true
+        console.log(isPalindrome('SOS')) // true
+        console.log(isPalindrome('Kayak')) // true
+        console.log(isPalindrome('Bonjour')) // false
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
